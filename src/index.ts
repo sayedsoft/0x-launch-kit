@@ -63,8 +63,8 @@ function getRpcUrl(network: Network): string {
             return 'https://rinkeby.infura.io/';
         case 'ganache':
             return 'http://ganache:8545/';
-        case 'custom':
-            return 'http://localhost:8545/';
+        case 'bsc':
+            return 'https://bsc-dataseed.binance.org/';
     }
 }
 
@@ -93,8 +93,8 @@ async function main() {
             value: 'ganache',
         },
         {
-            name: 'Custom',
-            value: 'custom',
+            name: 'BSC',
+            value: 'bsc',
         },
     ];
 
